@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Raleway } from "next/font/google";
-import Lock from "../../public/Lock.jpg";
+import Lock from "../../public/lock.jpg";
 
 const raleway = Raleway({
   subsets: ["latin"],
