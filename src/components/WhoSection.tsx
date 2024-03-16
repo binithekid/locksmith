@@ -26,7 +26,7 @@ const WhoSection = () => {
         </h1>
         <p className="mt-2 font-thin text-gray-800">
           Millennium Locksmiths is an independent, family-run business based in
-          Buckinghamshire – we are not a national call centre. We provide “24 hr
+          London – we are not a national call centre. We provide “24 hr
           Emergency” and “Non-Emergency” Locksmith Services with no call-out
           charge and at competitive rates. Our vans carry a comprehensive range
           of stock enabling most of our work to be completed the same day.
