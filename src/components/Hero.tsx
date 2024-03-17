@@ -12,13 +12,13 @@ const Hero = () => {
   let [isOpen, setIsOpen] = useState<any>(false);
 
   return (
-    <div className="w-full h-auto flex md:h-[35rem] flex-col md:flex-row">
+    <div className="w-full h-auto flex md:h-[35rem] flex-col-reverse md:flex-row">
       <div className="md:w-1/2 w-full bg-neutral-500 items-center justify-center md:py-0 py-10 px-4 md:px-20 flex flex-col gap-4">
         <p className="text-sm text-white font-thin">
-          24/7 & 365 TRUSTED SUPPORT{" "}
+          24/7 & 365 TRUSTED SUPPORT
         </p>
         <h1
-          className={`md:text-5xl text-3xl text-center md:leading-[3.5rem] text-white ${raleway.className}`}
+          className={`md:text-5xl text-2xl text-center md:leading-[3.5rem] text-white ${raleway.className}`}
         >
           EMERGENCY LOCKSMITHS IN LONDON
         </h1>
@@ -48,7 +48,7 @@ const Hero = () => {
         </div>
       </div>
       <div
-        className="w-1/2 bg-cover bg-center bg-no-repeat"
+        className="md:w-1/2 bg-cover w-full md:h-auto h-[20rem] bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/hero.jpg')" }}
       ></div>
       <ModalForm isOpen={isOpen} setIsOpen={setIsOpen} />

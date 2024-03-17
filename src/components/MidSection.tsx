@@ -62,7 +62,7 @@ const MidSection = () => {
             <li>24/7 availability for emergency locksmith services</li>
           </ul>
         </div>
-        <div className="flex flex-row justify-center md:justify-start gap-4 mt-8 md:mt-4">
+        <div className="flex flex-row gap-4 mt-8 md:mt-4">
           <motion.button
             className="text-xs border border-black font-light shadow px-4 md:px-10 py-3 rounded text-black bg-transparent"
             whileHover={{ backgroundColor: "#000000", color: "white" }}
