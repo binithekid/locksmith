@@ -19,9 +19,11 @@ const Map = () => {
 
       const { Map } = await loader.importLibrary("maps");
 
+      const { Marker } = await loader.importLibrary("marker");
+
       const position = {
-        lat: 51.5076,
-        lng: 0.2212,
+        lat: 51.56836,
+        lng: -0.10984,
       };
 
       const mapOptions = {
@@ -31,6 +33,11 @@ const Map = () => {
       };
 
       const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
+
+      const marker = new Marker({
+        map: map,
+        position: position,
+      });
     };
 
     initMap();
@@ -49,9 +56,9 @@ const Map = () => {
 
         <div className="flex flex-col gap-1 mt-2 text-sm font-thin">
           <p>Faw 4 Locks</p>
-          <p>23 Winconsan Lane</p>
+          <p>86 Stroud Green Road</p>
           <p>London</p>
-          <p>W12 8PQ</p>
+          <p>N4 3EN</p>
           <p>United Kingdom</p>
         </div>
       </div>

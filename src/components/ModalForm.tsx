@@ -2,6 +2,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { Raleway } from "next/font/google";
 import { motion } from "framer-motion";
+import { useForm, ValidationError } from "@formspree/react";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -13,20 +14,7 @@ export default function ModalForm({ isOpen, setIsOpen }: any) {
     setIsOpen(false);
   }
 
-  const [enquiryType, setEnquiryType] = useState("residential");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleEnquiryTypeChange = (event: any) => {
-    setEnquiryType(event.target.value);
-  };
-
-  const handleSumbit = (event: any) => {
-    event.preventDefault();
-    console.log("hello");
-  };
+  const [state, handleSubmit] = useForm("mbjnagbe");
 
   return (
     <>
@@ -66,32 +54,44 @@ export default function ModalForm({ isOpen, setIsOpen }: any) {
                   >
                     BOOK A LOCKSMITH
                   </h1>
-                  <form onSubmit={handleSumbit} className="mt-4">
+                  <form method="POST" onSubmit={handleSubmit} className="mt-4">
                     <select
+                      id="Enquiry Type"
+                      name="Enquiry Type"
                       required
                       className="w-full appearance-none shadow-sm bg-transparent font-thin border text-sm px-2 py-1 rounded custom-select mt-1 border-gray-400"
                     >
-                      <option value=""> Enquiry Type</option>
-                      <option value="Support">Residential</option>
-                      <option value="Enquiry">Business</option>
+                      <option value="">Choose an Enquiry Type</option>
+                      <option value="Residential">Residential</option>
+                      <option value="Business">Business</option>
                     </select>
                     <input
+                      id="name"
+                      name="name"
                       required
                       className="w-full appearance-none shadow-sm bg-transparent font-thin border text-sm px-2 py-1 rounded mt-3 border-gray-400"
                       placeholder="Name"
                     />
                     <input
+                      id="tel"
+                      name="phone number"
+                      type="tel"
                       required
                       className="w-full appearance-none shadow-sm bg-transparent font-thin border text-sm px-2 py-1 rounded mt-3 border-gray-400"
                       placeholder="Contact Number"
                     />
                     <input
                       required
+                      id="email"
+                      type="email"
+                      name="email"
                       className="w-full appearance-none shadow-sm bg-transparent font-thin border text-sm px-2 py-1 rounded mt-3 border-gray-400"
                       placeholder="Email"
                     />
                     <textarea
                       required
+                      id="message"
+                      name="message"
                       rows={6}
                       className="w-full appearance-none shadow-sm bg-transparent font-thin border text-sm px-2 py-1 rounded mt-3 border-gray-400"
                       placeholder="How can we help?"
@@ -107,6 +107,15 @@ export default function ModalForm({ isOpen, setIsOpen }: any) {
                     >
                       SEND MESSAGE
                     </motion.button>
+                    {state.succeeded ? (
+                      <p className="mt-4 text-xs text-gray-700 font-light w-full text-center">
+                        Thank you, Our team will call you shortly
+                      </p>
+                    ) : (
+                      <p className="mt-4 text-sm text-gray-700 font-light w-full text-center">
+                        🔒 Your information is 100% secure
+                      </p>
+                    )}
                   </form>
                 </Dialog.Panel>
               </Transition.Child>

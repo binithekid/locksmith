@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Raleway } from "next/font/google";
 import Image from "next/image";
 import MidSectionImage from "../../../public/aboutimage.jpg";
+import ModalForm from "../ModalForm";
+import { useState } from "react";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -9,6 +11,8 @@ const raleway = Raleway({
 });
 
 const AboutMid = () => {
+  let [isOpen, setIsOpen] = useState<any>(false);
+
   return (
     <div className="w-full flex py-20 px-4 md:px-10 lg:px-20 lg:gap-0 gap-20 flex-col flex-wrap lg:flex-row">
       <div className="flex flex-col justify-center lg:w-1/2">
@@ -59,6 +63,7 @@ const AboutMid = () => {
         </div> */}
         <div className="flex flex-row gap-4 mt-4">
           <motion.button
+            onClick={() => setIsOpen(true)}
             className="text-xs border border-black font-light shadow px-4 md:px-10 py-3 rounded text-black bg-transparent"
             whileHover={{ backgroundColor: "#20272d", color: "white" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -78,6 +83,7 @@ const AboutMid = () => {
           />
         </div>
       </div>
+      <ModalForm isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };

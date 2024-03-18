@@ -30,7 +30,7 @@ const Hero = () => {
         <hr className="w-[10%] mt-2 mb-4" />
         <p className="text-center font-thin tracking-wide text-sm md:leading-6 text-white">
           Locked out and need an emergency plumber in London? Call us at 078
-          2323 3291 for immediate assistance. Or book a plumber instantly using
+          6323 3157 for immediate assistance. Or book a plumber instantly using
           the button below. We&apos;re here 24/7 to solve all your plumbing
           issues swiftly.
         </p>

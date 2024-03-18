@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@googlemaps/js-api-loader": "github:googlemaps/js-api-loader",
     "@headlessui/react": "^1.7.18",
     "framer-motion": "^10.11.2",

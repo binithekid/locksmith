@@ -69,6 +69,7 @@ const MidSection = () => {
         </div>
         <div className="flex flex-row gap-4 mt-8 md:mt-4">
           <motion.button
+            onClick={handleCall}
             className="text-xs border border-black font-light shadow px-4 md:px-10 py-3 rounded text-black bg-transparent"
             whileHover={{ backgroundColor: "#000000", color: "white" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
