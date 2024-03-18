@@ -25,41 +25,32 @@ const NonEmergency = () => {
         </p> */}
         <hr className="w-[10%] mt-2 border-gray-300" />
         <p className="mt-2 text-sm font-thin lg:pr-20 text-gray-800">
-          We pride ourselves on providing professional and reliable locksmith
-          services at a great price. With years of experience in the industry,
-          our skilled technicians are equipped to handle any locksmithing need
-          efficiently and effectively. Whether you&apos;re locked out of your
-          home, need to replace locks, or require assistance with security
-          systems, we&apos;re here to help. Our commitment to quality service
-          and customer satisfaction ensures that you can trust us to deliver
-          prompt solutions tailored to your needs. Experience peace of mind
-          knowing that you&apos;re in good hands with our dedicated team.
+          We pride ourselves on providing comprehensive services to meet all of
+          our customers' needs. While we specialise in emergency locksmith
+          services, such as lockouts and urgent lock repairs, we also offer
+          non-emergency services to enhance your security and peace of mind.
+          Among these services is professional lock changing, whether you're
+          looking to upgrade your security or simply need to replace old or
+          damaged locks. Our team of skilled locksmiths is equipped with the
+          expertise and tools necessary to efficiently and effectively handle
+          any lock changing needs you may have. With our commitment to
+          excellence and customer satisfaction, you can trust us to deliver
+          top-notch service, whether it's an emergency situation or a planned
+          lock upgrade.
         </p>
         <div className="mt-8 lg:pr-10">
           <p className={`text-lg font-light ${raleway.className}`}>
             BENEFITS OF USING US
           </p>
           <ul className="list-disc text-sm ml-[0.9rem] pr-20 font-thin">
-            <li>
-              Emergency lockout assistance for homes, businesses, and vehicles
-            </li>
-            <li>Lock installation, repair, and replacement</li>
-            <li>Key cutting and duplication services</li>
-            <li>Rekeying locks for added security</li>
-            <li>Master key system installation and maintenance</li>
-            <li>
-              Security system installation, including CCTV and alarm systems
-            </li>
-            <li>Safe opening, repair, and installation</li>
-            <li>
-              Access control system setup for businesses and commercial
-              properties
-            </li>
-            <li>
-              Automotive locksmith services, including key fob programming and
-              ignition repair
-            </li>
-            <li>24/7 availability for emergency locksmith services</li>
+            <li>Lock changing</li>
+            <li>Lock installation</li>
+            <li>Key duplication</li>
+            <li>Master key system setup</li>
+            <li>Security system consultation and installation</li>
+            <li>Lock maintenance and repair</li>
+            <li>Safe installation and maintenance</li>
+            <li>Keyless entry system installation and repair</li>
           </ul>
         </div>
         <div className="flex flex-row gap-4 mt-4">
