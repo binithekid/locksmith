@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import { Raleway } from "next/font/google";
@@ -20,7 +19,7 @@ const FAQ = () => {
     {
       question: "I’ve been locked out of my property, can you help?",
       answer:
-        "We all lead busy lives and it is quite easy to find yourself in a situation when the front door has slammed shut with your keys on the inside of your property. Depending on the door, there are different techniques that can be used to help get you back into your property quickly and safely. We will do all that we can to ensure that you do not need to have the lock replaced. We will use Non Destructive Entry (NDE) methods where possible. It ultimately saves you money; our goal is to offer great customer service so that you recommend Millennium Locksmiths to friends and family. However there are some types of locks that will require drilling or replacing. We will always assess the problem and make a recommendation that best suits your predicament and look to have you back into your property immediately.",
+        "We all lead busy lives and it is quite easy to find yourself in a situation when the front door has slammed shut with your keys on the inside of your property. Depending on the door, there are different techniques that can be used to help get you back into your property quickly and safely. We will do all that we can to ensure that you do not need to have the lock replaced. We will use Non Destructive Entry (NDE) methods where possible. It ultimately saves you money; our goal is to offer great customer service so that you recommend Faw 4 Locks Locksmiths to friends and family. However there are some types of locks that will require drilling or replacing. We will always assess the problem and make a recommendation that best suits your predicament and look to have you back into your property immediately.",
       isAnswerVisible: false,
     },
     {
