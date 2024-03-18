@@ -12,7 +12,7 @@ const Hero = () => {
   let [isOpen, setIsOpen] = useState<any>(false);
 
   const handleCall = () => {
-    const phoneNumber = "tel:+447301611578"; // Replace with the desired phone number
+    const phoneNumber = "tel:+4407863233157"; // Replace with the desired phone number
     window.location.href = phoneNumber;
   };
 
@@ -29,10 +29,10 @@ const Hero = () => {
         </h1>
         <hr className="w-[10%] mt-2 mb-4" />
         <p className="text-center font-thin tracking-wide text-sm md:leading-6 text-white">
-          Locked out and need an emergency plumber in London? Call us at 078
-          6323 3157 for immediate assistance. Or book a plumber instantly using
-          the button below. We&apos;re here 24/7 to solve all your plumbing
-          issues swiftly.
+          Locked out and need an emergency plumber in London? Call us at{" "}
+          <span onClick={handleCall}>078 6323 3157</span> for immediate
+          assistance. Or book a plumber instantly using the button below.
+          We&apos;re here 24/7 to solve all your plumbing issues swiftly.
         </p>
         <div className="flex flex-row gap-4 mt-6">
           <motion.button

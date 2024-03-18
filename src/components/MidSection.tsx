@@ -14,7 +14,7 @@ const MidSection = () => {
   let [isOpen, setIsOpen] = useState<any>(false);
 
   const handleCall = () => {
-    const phoneNumber = "tel:+447301611578"; // Replace with the desired phone number
+    const phoneNumber = "tel:+4407863233157"; // Replace with the desired phone number
     window.location.href = phoneNumber;
   };
 

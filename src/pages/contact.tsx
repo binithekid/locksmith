@@ -6,7 +6,7 @@ import Map from "@/components/Map";
 import Head from "next/head";
 import { Raleway } from "next/font/google";
 import GetInTouch from "@/components/GetInTouch";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -15,7 +15,7 @@ const raleway = Raleway({
 
 const Contact = () => {
   const handleCall = () => {
-    const phoneNumber = "tel:+447546096173"; // Replace with the desired phone number
+    const phoneNumber = "tel:+4407863233157"; // Replace with the desired phone number
     window.location.href = phoneNumber;
   };
 
@@ -61,7 +61,7 @@ const Contact = () => {
                     onClick={handleCall}
                     className="font-thin cursor-pointer transition-all hover:opacity-70"
                   >
-                    <span className="mr-2">📞 </span>07546 0956 173
+                    <span className="mr-2">📞 </span> 078 6323 3157
                   </p>
                   <div className="flex md:mt-0 mt-4 flex-col">
                     <p className=""> Our Office Hours </p>
@@ -69,7 +69,7 @@ const Contact = () => {
                     <p className="font-thin">Saturday - Closed</p>
                     <p className="font-thin">Sunday- Closed</p>
                     <p className="mt-3">Our Service Hours</p>
-                    <p className="font-thin">Emergancy Call Out Available</p>
+                    <p className="font-thin">Emergency Call Out Available</p>
                   </div>
                 </div>
               </div>

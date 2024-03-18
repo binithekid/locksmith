@@ -13,11 +13,6 @@ const raleway = Raleway({
 const NonEmergency = () => {
   let [isOpen, setIsOpen] = useState<any>(false);
 
-  const handleCall = () => {
-    const phoneNumber = "tel:+447301611578"; // Replace with the desired phone number
-    window.location.href = phoneNumber;
-  };
-
   return (
     <div className="w-full flex py-20 px-4 md:px-10 lg:px-20 lg:gap-0 gap-20 flex-col flex-wrap lg:flex-row">
       <div className="flex flex-col full lg:w-1/2">
