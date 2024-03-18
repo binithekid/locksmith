@@ -14,9 +14,18 @@ export default function ModalForm({ isOpen, setIsOpen }: any) {
   }
 
   const [enquiryType, setEnquiryType] = useState("residential");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleEnquiryTypeChange = (event: any) => {
     setEnquiryType(event.target.value);
+  };
+
+  const handleSumbit = (event: any) => {
+    event.preventDefault();
+    console.log("hello");
   };
 
   return (
@@ -57,30 +66,38 @@ export default function ModalForm({ isOpen, setIsOpen }: any) {
                   >
                     BOOK A LOCKSMITH
                   </h1>
-                  <form className="mt-4">
-                    <select className="w-full appearance-none shadow-sm bg-transparent font-thin border text-sm px-2 py-1 rounded custom-select mt-1 border-gray-400">
+                  <form onSubmit={handleSumbit} className="mt-4">
+                    <select
+                      required
+                      className="w-full appearance-none shadow-sm bg-transparent font-thin border text-sm px-2 py-1 rounded custom-select mt-1 border-gray-400"
+                    >
                       <option value=""> Enquiry Type</option>
                       <option value="Support">Residential</option>
                       <option value="Enquiry">Business</option>
                     </select>
                     <input
+                      required
                       className="w-full appearance-none shadow-sm bg-transparent font-thin border text-sm px-2 py-1 rounded mt-3 border-gray-400"
                       placeholder="Name"
                     />
                     <input
+                      required
                       className="w-full appearance-none shadow-sm bg-transparent font-thin border text-sm px-2 py-1 rounded mt-3 border-gray-400"
                       placeholder="Contact Number"
                     />
                     <input
+                      required
                       className="w-full appearance-none shadow-sm bg-transparent font-thin border text-sm px-2 py-1 rounded mt-3 border-gray-400"
                       placeholder="Email"
                     />
                     <textarea
+                      required
                       rows={6}
                       className="w-full appearance-none shadow-sm bg-transparent font-thin border text-sm px-2 py-1 rounded mt-3 border-gray-400"
                       placeholder="How can we help?"
                     />
                     <motion.button
+                      type="submit"
                       className="w-full appearance-none font-light shadow-sm bg-transparent border text-sm px-2 py-2 rounded mt-3 border-gray-400"
                       whileHover={{
                         backgroundColor: "#20272d",

@@ -11,6 +11,11 @@ const raleway = Raleway({
 const Hero = () => {
   let [isOpen, setIsOpen] = useState<any>(false);
 
+  const handleCall = () => {
+    const phoneNumber = "tel:+447301611578"; // Replace with the desired phone number
+    window.location.href = phoneNumber;
+  };
+
   return (
     <div className="w-full h-auto flex md:h-[35rem] flex-col-reverse md:flex-row">
       <div className="md:w-1/2 w-full bg-neutral-500 items-center justify-center md:py-0 py-10 px-4 md:px-20 flex flex-col gap-2 md:gap-4">
@@ -31,6 +36,7 @@ const Hero = () => {
         </p>
         <div className="flex flex-row gap-4 mt-6">
           <motion.button
+            onClick={handleCall}
             className="text-xs font-light px-4 md:px-10 py-3 rounded shadow-lg text-white bg-[#20272d]"
             whileHover={{ backgroundColor: "rgb(0, 0, 0)" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
