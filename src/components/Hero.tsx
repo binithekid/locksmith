@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <div className="w-full h-auto flex md:h-[35rem] flex-col-reverse md:flex-row">
-      <div className="md:w-1/2 w-full bg-neutral-500 items-center justify-center md:py-0 py-10 px-4 md:px-20 flex flex-col gap-4">
+      <div className="md:w-1/2 w-full bg-neutral-500 items-center justify-center md:py-0 py-10 px-4 md:px-20 flex flex-col gap-2 md:gap-4">
         <p className="text-sm text-white font-thin">
           24/7 & 365 TRUSTED SUPPORT
         </p>
@@ -23,7 +23,7 @@ const Hero = () => {
           EMERGENCY LOCKSMITHS IN LONDON
         </h1>
         <hr className="w-[10%] mt-2 mb-4" />
-        <p className="text-center font-thin tracking-wide text-sm leading-6 text-white">
+        <p className="text-center font-thin tracking-wide text-sm md:leading-6 text-white">
           Locked out and need an emergency plumber in London? Call us at 078
           2323 3291 for immediate assistance. Or book a plumber instantly using
           the button below. We&apos;re here 24/7 to solve all your plumbing
@@ -48,7 +48,7 @@ const Hero = () => {
         </div>
       </div>
       <div
-        className="md:w-1/2 bg-cover w-full md:h-auto h-[20rem] bg-center bg-no-repeat"
+        className="md:w-1/2 bg-cover w-full md:h-auto h-[11rem] bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/hero.jpg')" }}
       ></div>
       <ModalForm isOpen={isOpen} setIsOpen={setIsOpen} />

@@ -29,8 +29,14 @@ const NavBar = () => {
           </p>
         </div>
       </div>
-      <div className="flex w-full items-center border border-gray-100 py-4 justify-center">
-        <Image src={Logo} alt="Logo" height={130} width={130} />
+      <div className="flex w-full items-center border border-gray-100 py-2 md:py-4 justify-center">
+        <Image
+          src={Logo}
+          alt="Logo"
+          height={130}
+          width={130}
+          className="mx-auto w-32 h-32 sm:w-40 sm:h-40"
+        />
       </div>
       <div className="flex flex-row w-full justify-center my-3 gap-6 md:gap-20">
         <Link href="/">
