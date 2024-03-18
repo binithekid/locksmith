@@ -26,11 +26,10 @@ const WhoSection = () => {
           Who are we?
         </h1>
         <p className="mt-2 font-thin text-gray-800">
-          Millennium Locksmiths is an independent, family-run business based in
-          London – we are not a national call centre. We provide “24 hr
-          Emergency” and “Non-Emergency” Locksmith Services with no call-out
-          charge and at competitive rates. Our vans carry a comprehensive range
-          of stock enabling most of our work to be completed the same day.
+          Faw 4 Locks is an independent, business based in London. We provide
+          “24 hr Emergency” and “Non-Emergency” Locksmith Services with no
+          call-out charge and at competitive rates. We carry a comprehensive
+          range of stock enabling most of our work to be completed the same day.
         </p>
         <Link href="/about">
           <motion.button

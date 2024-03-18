@@ -28,14 +28,14 @@ const ServicesMid = () => {
         </p> */}
         <hr className="w-[10%] mt-2 border-gray-300" />
         <p className="mt-2 text-sm font-thin lg:pr-20 text-gray-800">
-          Look no further than Millennium Locksmiths who are an established
-          independent family business who pride themselves on providing an
-          excellent service. We are a Checkatrade, Trading Standards and Which?
-          Trusted Trader accredited company. With all of our locksmiths being
-          DBS (previously CRB) checked and verified. We can provide a
-          comprehensive service that will secure your property both safely and
-          securely; giving you reassurance and total peace of mind for you and
-          your family.
+          Look no further than Faw 4 Locks who are an established independent
+          family business who pride themselves on providing an excellent
+          service. We are a Checkatrade, Trading Standards and Which? Trusted
+          Trader accredited company. With all of our locksmiths being DBS
+          (previously CRB) checked and verified. We can provide a comprehensive
+          service that will secure your property both safely and securely;
+          giving you reassurance and total peace of mind for you and your
+          family.
         </p>
         <div className="mt-3 lg:pr-10">
           <ul className="list-disc text-sm ml-[0.9rem] pr-20 font-thin">

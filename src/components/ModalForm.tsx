@@ -105,7 +105,7 @@ export default function ModalForm({ isOpen, setIsOpen }: any) {
                       }}
                       transition={{ duration: 0.5, ease: "easeInOut" }}
                     >
-                      SEND MESSAGE
+                      {state.succeeded ? "MESSAGE SENT" : "SEND MESSAGE"}
                     </motion.button>
                     {state.succeeded ? (
                       <p className="mt-4 text-xs text-gray-700 font-light w-full text-center">

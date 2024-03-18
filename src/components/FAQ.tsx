@@ -38,7 +38,7 @@ const FAQ = () => {
     {
       question: "How long have we been operating?",
       answer:
-        "We have been trading since 2005 and have fixed, replaced and repaired over 20,000 locks over this period. We have many locksmith case studies, here are just a few examples. If you do not see your particular locksmith requirement here, please don’t worry and contact Tim direct. The chances are that we have probably carried out a repair or replacement lock similar to yours at some point.",
+        "We have been trading since 2021 and have fixed, replaced and repaired thousands of locks over this period. We have many locksmith case studies, here are just a few examples. If you do not see your particular locksmith requirement here, please don’t worry and contact Tim direct. The chances are that we have probably carried out a repair or replacement lock similar to yours at some point.",
       isAnswerVisible: false,
     },
   ]);
